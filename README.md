@@ -33,10 +33,8 @@ A full-stack AI-powered Support Ticket Portal built using Next.js, TypeScript, P
 
 ## 👤 Demo Login
 
-```
 Email:    admin@supportdesk.com
 Password: Admin@123
-```
 
 ## ⚙️ Run Locally
 
@@ -72,11 +70,7 @@ Start the app:
 npm run dev
 ```
 
-Open:
-
-```
-http://localhost:3000
-```
+Open: http://localhost:3000
 
 ## 📚 Skills Demonstrated
 
