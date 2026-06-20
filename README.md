@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 AI Support Ticket Portal
 
-## Getting Started
+A full-stack AI-powered Support Ticket Portal built using Next.js, TypeScript, Prisma, PostgreSQL, NextAuth, and Vercel.
 
-First, run the development server:
+## 🚀 Live Demo
+
+- **Application:** https://project-nr996.vercel.app/
+- **Dashboard:** https://project-nr996.vercel.app/dashboard
+
+## ✨ Features
+
+- 🔐 Secure Login with NextAuth
+- 🎫 Create, View & Update Support Tickets
+- 🧠 AI-Generated Response Suggestions (Google Gemini)
+- 💬 Human Reply / Support Conversation Thread
+- 🔍 Search Tickets
+- 📂 Filter Tickets by Status
+- 📊 Dashboard Overview with Clickable Metrics
+- 🗄️ PostgreSQL Database (Neon)
+- 🔄 REST API Integration
+- ☁️ Deployed on Vercel
+
+## 🛠️ Tech Stack
+
+- Next.js 16
+- TypeScript
+- Prisma ORM
+- PostgreSQL (Neon)
+- NextAuth
+- Tailwind CSS
+- Google Gemini API
+- Vercel
+
+## 👤 Demo Login
+
+```
+Email:    admin@supportdesk.com
+Password: Admin@123
+```
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/lavanyathotaai-design/ai-support-portal.git
+cd ai-support-portal
+npm install
+```
+
+Set up your environment variables:
+
+```bash
+cp .env.example .env
+```
+
+Then fill in `.env` with your own values:
+- `DATABASE_URL` — your PostgreSQL connection string
+- `NEXTAUTH_SECRET` — generate with `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`
+- `NEXTAUTH_URL` — `http://localhost:3000`
+- `GEMINI_API_KEY` — get one free at https://aistudio.google.com/apikey
+
+Set up the database:
+
+```bash
+npx prisma migrate dev
+npx prisma generate
+npx prisma db seed
+```
+
+Start the app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Skills Demonstrated
 
-## Learn More
+- Full-Stack Development
+- Authentication & Authorization
+- Database Design with Prisma
+- REST API Development
+- CRUD Operations
+- AI API Integration
+- Environment Variable Management
+- Cloud Database Integration
+- Production Deployment on Vercel
 
-To learn more about Next.js, take a look at the following resources:
+## 👩‍💻 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Lavanya Thota
